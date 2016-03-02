@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script data-require="angular.js@*" data-semver="1.5.0" src="https://code.angularjs.org/1.5.0/angular.js"></script>
+    	<script data-require="angular-route@*" data-semver="1.5.0" src="https://code.angularjs.org/1.5.0/angular-route.js"></script>
+
+    	<script src="apps.js"></script>
+    	<script src="service.js"></script>
+    	<script src="controller1.js"></script>
+    	<script src="controller2.js"></script>
+    	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+    	<link rel="stylesheet" type="text/css" href="styles.css">
+
+    	<title>Madlibs!</title>
+	</head>
+	<body ng-app="routeEx">
+		<div class="jumbotron">
+			<h1 class="container">Mad mad mad mad libs libs libs libs</h1>
+		</div>
+		<div class="container">
+			<div id="navLinks">
+				<a href="#/">Fill in the blanks</a> | <a href="#/view2">See the story</a>
+			</div>
+			<div ng-view=""></div>
+		</div>
+
+	</body>
+</html>
