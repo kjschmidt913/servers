@@ -10,4 +10,10 @@ app.config(function($routeProvider){
 		templateUrl: 'view2.html',
 		controller: 'showWords'
 	});
+
+	$routeProvider.when('/view3', {
+		templateUrl: 'view3.html',
+		controller: 'redditDisplay'
+	});
+
 });
